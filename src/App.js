@@ -144,7 +144,7 @@ class App extends React.Component {
           <p style={{ display: "inline" }}>Copyright by </p>
           <a style={{ display: "inline" }} href="https://twitter.com/pbnather">@pbnather</a>
           <p style={{ display: "inline" }}> — code available at </p>
-          <a style={{ display: "inline" }} href="hhttps://github.com/pbnather/arbitrage-board">GitHub</a>
+          <a style={{ display: "inline" }} href="https://github.com/pbnather/arbitrage-board">GitHub</a>
         </div>
       </div >
     );
