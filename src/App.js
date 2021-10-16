@@ -3,6 +3,7 @@ import './App.css';
 import { ethers, BigNumber } from "ethers";
 import "arb-ts";
 import React from 'react';
+import { Helmet } from "react-helmet";
 
 const ethProvider = new ethers.providers.InfuraProvider("homestead", {
   projectId: "3923170be82d41b79116ea43dad8774e"
@@ -78,6 +79,8 @@ class App extends React.Component {
       arbitrage: arbitrageOpportunity,
       seconds: 15
     }));
+
+    document.title = "ETH/SPELL arb: " + arbitrageOpportunity + "%";
   }
 
   tick() {
@@ -111,6 +114,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Helmet>
+          <title>ETH/SPELL arb</title>
+        </Helmet>
         <header className="App-header">
           <p>
             Current arbitrage opportunity on ETH/SPELL:
