@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -15,7 +16,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +25,52 @@
   color: white;
 }
 
+.App-div {
+  background-color: #282c34;
+  color: white;
+  justify-content: center;
+  display: flex;
+  height: 70vh;
+  overflow: auto;
+}
+
 .App-link {
-  color: #61dafb;
+  color: #cf9446;
+}
+
+.Boxx {
+  max-width: max-content;
+  align-content: center;
+  justify-content: center;
+}
+
+.PriceBox {
+  display: inline-block;
+  border: 15px solid #a78559;
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.ArbitrageBox {
+  margin-top: 20px;
+  padding: 40px -20px 40px -20px;
+  font-size: 100px;
+  align-content: center;
+  min-width: max-content;
+}
+
+.Footer {
+  height: 10vh;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: #282c34;
+  overflow: auto;
+}
+
+a { 
+  color: pink;
 }
 
 @keyframes App-logo-spin {
