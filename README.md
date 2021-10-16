@@ -12,10 +12,10 @@ If you see positive arbitrage:
 For negative arbitrage, do otherwise (sell ETH and bridge SPELL).
 
 ##
-Next steps:
-[ ] Set amount of ETH to arbitrage (currently 1 ETH).
-[ ] Add more pairs (possibly all available).
-[ ] Set up subgraph/AWS lambda to gather arbitrage history.
+Next steps:  
+[ ] Set amount of ETH to arbitrage (currently 1 ETH).  
+[ ] Add more pairs (possibly all available).  
+[ ] Set up subgraph/AWS lambda to gather arbitrage history.  
 
 ## Running 
 Install dependencies:  
