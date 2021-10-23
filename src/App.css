@@ -60,6 +60,18 @@
   min-width: max-content;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .Footer {
   height: 10vh;
   justify-content: center;
@@ -71,6 +83,20 @@
 
 a { 
   color: pink;
+}
+
+.inputTokenField {
+  background-color: #34282f;
+  color: #a78559;
+  font-size: large;
+  margin-left: 10px;
+}
+
+.RefreshButton {
+  background-color: #34282f;
+  color: #a78559;
+  font-size: large;
+  margin-left: 10px;
 }
 
 @keyframes App-logo-spin {
