@@ -128,15 +128,15 @@ class App extends React.Component {
         <div className="App-div">
           <div className="Boxx">
             <div>
+              <div className="ArbitrageBox">
+                <p>{this.state.arbitrage}%</p>
+              </div>
               <div className="PriceBox">
                 Ethereum ETH/SPELL: {this.state.ethPrice}
               </div>
               <div className="PriceBox">
                 Arbitrum ETH/SPELL: {this.state.arbPrice}
               </div>
-            </div>
-            <div className="ArbitrageBox">
-              <p>{this.state.arbitrage}%</p>
             </div>
           </div>
         </div>
