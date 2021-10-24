@@ -46,12 +46,14 @@ class App extends React.Component {
       }
     }
 
+    const localSpellAmount = localStorage.getItem('spellAmount') !== null;
+
     this.state = {
       seconds: parseInt(props.startTimeInSeconds, 10) || 15,
       ethPrice: 0.0,
       arPrice: 0.0,
       arbitrage: 0.0,
-      spellAmount: "1000000",
+      spellAmount: localSpellAmount ? localStorage.getItem('spellAmount') : "1000000",
       fetching: true
     };
     this.updatePrice(this.state.spellAmount);
@@ -95,7 +97,6 @@ class App extends React.Component {
     }));
     if (this.state.seconds === 0) {
       this.updatePrice(this.state.spellAmount);
-
     }
   }
 
@@ -142,6 +143,7 @@ class App extends React.Component {
                   onChange={(e) => {
                     if (e.target.value > 0) {
                       this.setState({ spellAmount: e.target.value });
+                      localStorage.setItem("spellAmount", e.target.value);
                     }
                   }}
                   onKeyPress={(e) => {
