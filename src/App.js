@@ -117,10 +117,6 @@ class App extends React.Component {
       .join(':');
   }
 
-  convertAmount(amount) {
-    return BigNumber.from(amount).mul(BigNumber.from(TEN_TO_18));
-  }
-
   render() {
     return (
       <div className="App">
@@ -147,8 +143,12 @@ class App extends React.Component {
                     if (e.target.value > 0) {
                       this.setState({ spellAmount: e.target.value });
                     }
-                  }
-                  }
+                  }}
+                  onKeyPress={(e) => {
+                    if (e.code === "Enter") {
+                      this.updatePrice(this.state.spellAmount);
+                    }
+                  }}
                 />
               </label>
               <button
